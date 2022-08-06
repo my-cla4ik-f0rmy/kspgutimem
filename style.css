@@ -1,0 +1,194 @@
+
+
+
+
+body{
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:stretch ;
+}
+.block{
+
+    height: 100px;
+    width: 100%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+    
+
+}
+.one{
+    display: flex;
+    background-color: rgb(72, 72, 72);
+    height: 50px;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+.two{
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+}
+.six{
+
+    background-color: darkorange;
+    height: 100px;
+    width: 100%;
+    align-items: flex-end;
+    
+}
+.text{
+    color:rgb(255, 255, 255);
+}
+.output{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.499);
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    align-items: flex-start;
+    vertical-align: top;
+
+
+    
+    
+}
+.settings{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-weight: bold;
+}
+.sketch{
+    position:absolute;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+
+    object-fit: contain;
+}
+.input{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(60, 166, 231);
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.183);
+    font-size: 14px;
+    position: relative;
+    box-sizing:border-box;
+    padding: 20px;
+    margin-top: 10px;
+    
+    
+
+    
+}
+.input1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+input[type=radio]+label{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+
+    
+}
+.radio-btn{
+    margin: 10px;
+}
+.button-cst{
+
+ 
+}
+
+button{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(60, 166, 231);
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.183);
+    background: rgb(60, 166, 231);
+    color: white;
+    font-size: 14px;
+}
+
+button:hover{
+    border: 1.5px solid rgb(50, 139, 194);
+    background: rgb(50, 139, 194);
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.183);
+
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .one {
+      /* На маленьких экранах мы меняем направление основной оси с горизонтального (строка) на вертикальное (колонка) */
+        flex-direction: column;
+        height: auto;
+    }
+    .text{
+        padding: 10px;
+    }
+    .two{
+        flex-direction: column;
+        height: auto;
+    }
+    .input{
+        margin: 0px;
+    }
+  }
+
+
+
+
+
+
+  @media (prefers-color-scheme: light) {
+    body{
+     background-color: rgb(255, 255, 255);
+    }
+    .text{
+        color: #000;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    body{
+     background-color: rgb(30, 30, 30);
+    }
+    .text{
+        color: white;
+    }
+  }
