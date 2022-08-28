@@ -1,6 +1,7 @@
 
-
-
+.text-2{
+    font-weight: bold;
+}
 
 body{
     background-color: white;
@@ -87,24 +88,18 @@ label{
     width: 300px;
     height: 300px;
     border-radius: 5px;
-
     object-fit: contain;
 }
 .input{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     width: 300px;
     height: 50px;
     border-radius: 5px;
     border: 1.5px solid rgb(60, 166, 231);
     box-shadow:  0 0 5px rgba(0, 0, 0, 0.183);
     font-size: 14px;
-    position: relative;
-    box-sizing:border-box;
-    padding: 20px;
-    margin-top: 10px;
-    
-    
-
-    
 }
 .input1{
     margin-bottom: 10px;
@@ -124,14 +119,10 @@ input[type=radio]+label{
 .radio-btn{
     margin: 10px;
 }
-.button-cst{
-
- 
-}
 
 button{
-    width: 300px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 5px;
     border: 1.5px solid rgb(60, 166, 231);
     box-shadow:  0 0 5px rgba(0, 0, 0, 0.183);
@@ -145,6 +136,13 @@ button:hover{
     background: rgb(50, 139, 194);
     box-shadow:  0 0 10px rgba(0, 0, 0, 0.183);
 
+}
+.text-1{
+    color: white;
+    font-weight: bold;
+}
+.text-2{
+    color: white;
 }
 
 
@@ -167,7 +165,6 @@ button:hover{
         height: auto;
     }
     .input{
-        margin: 0px;
     }
   }
 

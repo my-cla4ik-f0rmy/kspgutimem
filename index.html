@@ -14,23 +14,32 @@
   </head>
   <meta name="theme-color" content="#23a0e8">
 <body>
-
-
-
-
   <div class="container">
       <div class="block one">
-        <div class="text">Один</div>
-        <div class="text">Два</div>
-        <div class="text">Три</div>
-        <div class="text">Четыре</div>
-        <div class="text">Пять</div>
+        <div class="text-2">@my_cla4ik_f0rmy</div>
       </div>
       <div class="block two">
         <div class="output">
           <div class="sketch" id="sketch-div"></div>
         </div>
         <div class="settings">
+
+
+          <div class="radio-btn">
+
+            <div class="radio-form">
+              <input type="radio" class="radio" id="option-11" name="type1"  value="1" checked></lable>
+              <label for="option-11"class="text">Пост</label>
+            </div>
+
+            <div class="radio-form">
+              <input type="radio" class="radio" id="option-21" name="type1" value="2" ></lable>
+              <label for="option-21" class="text">Ава</label>
+            </div>
+
+          </div>
+
+
           <div class="input1">
             <label for="sample5" class="text">Заголовок</label>
             <input class="input" id="sample5">
@@ -39,20 +48,25 @@
             <label for="sample6" class="text">Информация</label>
             <textarea class="input" id="sample6"></textarea>
           </div>
+
           <div class="button-cst">
-            <button id="save-btn" onclick="pg.save('йцуйцу')" class="text">Сохранить</button>
-
-
+            <button id="save-btn" onclick="pg.save('йцуйцу')" class="text-1" style="width: 300px; height:30px">
+              Сохранить
+            </button>
           </div>
+
           <div class="radio-btn">
+
             <div class="radio-form" id="raidob">
-              <input type="radio" class="radio" id="option-1" name="options" value="#63B0DE" v-model="picked" id="hello" checked></lable>
+              <input type="radio" class="radio" id="option-1" name="options" value="#63B0DE"  checked></lable>
               <label for="option-1" class="text">Синий</label>
             </div>
+
             <div class="radio-form">
-              <input type="radio" class="radio" id="option-2" name="options" value="#27C679" v-model="picked" >
+              <input type="radio" class="radio" id="option-2" name="options" value="#27C679"  >
               <label for="option-2" class="text">Зеленый</label>
             </div>
+
           </div>
         </div>
       </div>
