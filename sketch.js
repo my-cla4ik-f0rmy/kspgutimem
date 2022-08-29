@@ -95,6 +95,6 @@ function ava_chat(){
 
 }
 function save(){
-  pg.save("йцуйцу"); 
+  pg.save('blshv'+document.getElementById('sample5').value); 
 }
 
