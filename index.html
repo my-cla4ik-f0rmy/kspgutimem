@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,70 +9,67 @@
     <script src="sketch.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
   <meta name="theme-color" content="#23a0e8">
 <body>
-  <div class="container">
+  <div class="container-1">
       <div class="block one">
-        <div class="text-2">ТЕСТ</div>
       </div>
       <div class="block two">
+        
         <div class="output">
           <div class="sketch" id="sketch-div"></div>
         </div>
+
         <div class="settings">
-
-
+          <div class="text h1">Ввод</div>
+          <div class="input-block">
+            <div class="input1">
+              <label for="sample5" class="text">Заголовок</label>
+              <input class="input" id="sample5">
+            </div>
+            <div class="input1">
+              <label for="sample6" class="text">Информация</label>
+              <textarea class="input" id="sample6"></textarea>
+            </div>
+  
+            <div class="button-cst">
+              <button id="save-btn" onclick="pg.save('йцуйцу')" class="text-1" style="width: 300px; height:30px">
+                Сохранить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="settings-block">
+          <div class="text h1">Настройки</div>
           <div class="radio-btn">
-
             <div class="radio-form">
-              <input type="radio" class="radio" id="option-11" name="type1"  value="1" checked></lable>
+              <input type="radio" class="custom-radio" id="option-11" name="type1"  value="1" checked></lable>
               <label for="option-11"class="text">Пост</label>
             </div>
-
             <div class="radio-form">
-              <input type="radio" class="radio" id="option-21" name="type1" value="2" ></lable>
+              <input type="radio" class="custom-radio" id="option-21" name="type1" value="2" ></lable>
               <label for="option-21" class="text">Ава</label>
             </div>
-
           </div>
-
-
-          <div class="input1">
-            <label for="sample5" class="text">Заголовок</label>
-            <input class="input" id="sample5">
-          </div>
-          <div class="input1">
-            <label for="sample6" class="text">Информация</label>
-            <textarea class="input" id="sample6"></textarea>
-          </div>
-
-          <div class="button-cst">
-            <button id="save-btn" onclick="pg.save('йцуйцу')" class="text-1" style="width: 300px; height:30px">
-              Сохранить
-            </button>
-          </div>
-
           <div class="radio-btn">
-
             <div class="radio-form" id="raidob">
-              <input type="radio" class="radio" id="option-1" name="options" value="#63B0DE"  checked></lable>
+              <input type="radio" class="custom-radio" id="option-1" name="options" value="#63B0DE"  checked></lable>
               <label for="option-1" class="text">Синий</label>
             </div>
-
             <div class="radio-form">
-              <input type="radio" class="radio" id="option-2" name="options" value="#27C679"  >
+              <input type="radio" class="custom-radio" id="option-2" name="options" value="#27C679"  >
               <label for="option-2" class="text">Зеленый</label>
             </div>
-
+          </div>
           </div>
         </div>
       </div>
+      </div>
   </div>
-    <script src="app.js"></script>
 </body>
 <script src="sketch.js"></script>
-
 </html>
 
 
