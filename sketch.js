@@ -17,6 +17,8 @@ function preload() {
   font = loadFont('font/OpenSans-Bold.ttf');
   font2 = loadFont('font/OpenSans-SemiBold.ttf');
   img1 = loadImage('images/student.png')
+  img2 = loadImage('images/new.png')
+  img3 = loadImage('images/parent.png')
 }
 function setup() {
     var b = document.getElementById('sketch-div');
@@ -46,9 +48,16 @@ function draw() {
 
 }
 function post_sm(){
-  color_rec = document.querySelector('input[name="options"]:checked').value;
   const name = document.getElementById("sample5").value;
   const name2 = document.getElementById("sample6").value;
+  znach = document.querySelector('input[name="options"]:checked').value
+  if(znach==1 ){
+    color_rec = "#63B0DE"
+  } else if(znach == 2) {
+    color_rec = "#27C679"
+  } else if(znach == 3) {
+    color_rec = "#E87156"
+  }
   background('#345534')
   pg.background('#fdssdf')
   pg.noStroke();
@@ -67,7 +76,15 @@ function post_sm(){
 
 function ava_chat(){
   const name = document.getElementById("sample5").value;
-  pg.image(img1, 0,0,1080,1080)
+  znach = document.querySelector('input[name="options"]:checked').value
+
+  if(znach==1){
+    pg.image(img1, 0,0,1080,1080)
+  } else if(znach==2){
+    pg.image(img2, 0,0,1080,1080)
+  } else if(znach==3){
+    pg.image(img3, 0,0,1080,1080)
+  }
   pg.textFont(font);
   pg.textSize(fontsize3)
   pg.textWrap(WORD);

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тест</title>
+    <title>Генерация КС</title>
     <script src="p5/p5.js"></script>
     <script src="sketch.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <meta name="theme-color" content="#23a0e8">
 <body>
@@ -25,18 +26,19 @@
         <div class="settings">
           <div class="text h1">Ввод</div>
           <div class="input-block">
-            <div class="input1">
-              <label for="sample5" class="text">Заголовок</label>
-              <input class="input" id="sample5">
+            <div class="text-field">
+              <label for="sample5" class="text field__label">Заголовок</label>
+              <input class="text-3 field__input" id="sample5" value="3ИСПП-3К">
             </div>
-            <div class="input1">
-              <label for="sample6" class="text">Информация</label>
-              <textarea class="input" id="sample6"></textarea>
+            <div class="text-field">
+              <label for="sample6" class="text field__label">Информация</label>
+              <input class="text-3 field__input" id="sample6"></input>
             </div>
   
             <div class="button-cst">
-              <button id="save-btn" onclick="pg.save('йцуйцу')" class="text-1" style="width: 300px; height:30px">
-                Сохранить
+              <button id="save-btn" onclick="pg.save('йцуйцу')" class="text-1 c-button" style="width: 150px; height:40px">
+                <icon class="material-symbols-rounded" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">file_download</icon>
+                <span style="vertical-align: middle;">Скачать</span>
               </button>
             </div>
           </div>
@@ -44,6 +46,7 @@
         <div class="settings-block">
           <div class="text h1">Настройки</div>
           <div class="radio-btn">
+            <label class="text field__label">Тип</label>
             <div class="radio-form">
               <input type="radio" class="custom-radio" id="option-11" name="type1"  value="1" checked></lable>
               <label for="option-11"class="text">Пост</label>
@@ -54,13 +57,18 @@
             </div>
           </div>
           <div class="radio-btn">
+            <label class="text field__label">Цвет</label>
             <div class="radio-form" id="raidob">
-              <input type="radio" class="custom-radio" id="option-1" name="options" value="#63B0DE"  checked></lable>
-              <label for="option-1" class="text">Синий</label>
+              <input type="radio" class="custom-radio" id="option-1" name="options" value=1  checked></lable>
+              <label for="option-1" class="text">Первый</label>
             </div>
             <div class="radio-form">
-              <input type="radio" class="custom-radio" id="option-2" name="options" value="#27C679"  >
-              <label for="option-2" class="text">Зеленый</label>
+              <input type="radio" class="custom-radio" id="option-2" name="options" value=2  >
+              <label for="option-2" class="text">Второй</label>
+            </div>
+            <div class="radio-form">
+              <input type="radio" class="custom-radio" id="option-3" name="options" value=3  >
+              <label for="option-3" class="text">Третий</label>
             </div>
           </div>
           </div>
