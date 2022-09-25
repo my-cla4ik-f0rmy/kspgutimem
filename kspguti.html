@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Генерация КС</title>
+  
+  <script src="p5/p5.js"></script>
+  <script src="sketch.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<meta name="theme-color" content="#23a0e8">
+<body>
+  <div class="container-1">
+      <div class="block one"></div>
+      <div class="block two" id="Test" >
+        <div class="output" >
+          <div class="sketch" id="sketch-div"></div>
+        </div>
+        <div class="settings">
+          <div class="text h1">Ввод</div>
+          <div class="font text-field">
+            <label for="sample5" class="text-field__label">Заголовок</label>
+            <input class="text-field__input" id="sample5" value="3ИСПП-3К">
+          </div>
+          <div class="font text-area">
+            <label for="sample6" class="text-field__label">Информация</label>
+            <textarea class="text-area__input" id="sample6"></textarea>
+          </div>
+          <div class="button-cst" >
+            <div class="button-ms" id="myapp">
+            <button id="save-btn" class="font c-button" @click="Test.greet">СКАЧАТЬ</button>
+          </div>
+          <div>
+            <button id="save-btn" onclick="pg.save('blshv_'+document.getElementById('sample5').value)" class="font c-button">ПОДЕЛИТЬСЯ</button>
+          </div>
+          </div>
+          </div>
+        <div class="settings-block">
+          <div class="text h1">Настройки</div>
+          
+            <label class="text field__label">Тип</label>
+            <div class="radio-btn">
+            <div class="radio-form">
+              <input type="radio" class="custom-radio" id="option-11" name="type1"  value="1" ></lable>
+              <label for="option-11"class="text">Пост</label>
+            </div>
+            <div class="radio-form">
+              <input type="radio" class="custom-radio" id="option-21" name="type1" value="2" checked></lable>
+              <label for="option-21" class="text">Ава</label>
+            </div>
+          </div>
+          <div class="radio-btn">
+            <label class="text field__label">Цвет</label>
+            <div class="radio-form" id="raidob">
+              <input type="radio" class="custom-radio" id="option-1" name="options" value=1  checked></lable>
+              <label for="option-1" class="text">Первый</label>
+            </div>
+            <div class="radio-form">
+              <input type="radio" class="custom-radio" id="option-2" name="options" value=2  >
+              <label for="option-2" class="text">Второй</label>
+            </div>
+            <div class="radio-form">
+              <input type="radio" class="custom-radio" id="option-3" name="options" value=3  >
+              <label for="option-3" class="text">Третий</label>
+            </div>
+          </div>
+          </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="sketch.js"></script>
+</body>
+
+</html>
+
+
+
+
+
