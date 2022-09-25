@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url(input.css);
+
+
+.font{
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.container-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:stretch ;
+}
+.block{
+
+    height: 100px;
+    width: 100%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.h1{
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+}
+/*.one{
+    display: flex;
+    background-color: rgb(72, 72, 72);
+    height: 50px;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}*/
+.two{
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    border-radius: 10px;
+
+    
+}
+.six{
+
+    background-color: darkorange;
+    height: 100px;
+    width: 100%;
+    align-items: flex-end;
+    
+}
+.text{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+.text-3{
+    color:rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+}
+.output{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    align-items: flex-start;
+    vertical-align: top;
+
+
+    
+    
+}
+.settings{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.settings-block{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start
+}
+label{
+    font-weight: bold;
+}
+.sketch{
+    position:absolute;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+.input1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+
+.radio-form{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+.custom-radio{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-weight: 400;
+  }
+.custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 30%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+    border-radius: 40%;
+    transition: border-radius 0.25s ease-in-out;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  /* стили для радиокнопки, находящейся в фокусе */
+  .custom-radio:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-radius: 100%;
+    transition: border-radius 0.25s ease-in-out;
+  }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+    border-radius: 100%;
+    transition: border-radius 0.25s ease-in-out;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: rgb(60, 166, 231);
+    background-color: rgb(60, 166, 231);
+    border-radius: 100%;
+    transition: border-radius 0.25s ease-in-out;
+
+    }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+.button-cst{
+  width: 100%;
+  padding-right: 0;
+  justify-items: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  flex-wrap: wrap;
+  
+  
+}
+.button-ms{
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+  .c-button {
+    min-width: 38px;
+    min-height: 38px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(55, 159, 224);
+    color: #fff;
+    align-items: stretch;
+    padding: 0px 15px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+
+    }
+  
+  .c-button:hover {
+    background: rgb(52, 151, 212);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.20s ease-out;
+  
+  }
+  
+  .c-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+
+  }
+  .c-button:active {
+    outline: none;
+    box-shadow: 0 0 0 0px #cbd6ee;
+    transition: box-shadow 0.20s ease-out;
+
+  }
+.text-1{
+    color: white;
+    font-weight: bold;
+
+}
+.text-2{
+    color: white;
+}
+
+
+
+
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 300,
+  'opsz' 40;
+  vertical-align:middle
+}
+
+
+
+@media (max-width: 1100px) {
+    .one {
+      /* На маленьких экранах мы меняем направление основной оси с горизонтального (строка) на вертикальное (колонка) */
+        flex-direction: column;
+        height: auto;
+    }
+    .text{
+    }
+    .two{
+        flex-direction: column;
+        height: auto;
+    }
+    .settings{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10px;
+    }
+    .settings-block{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10px;
+    }
+  }
+
+
+
+
+
+
+  @media (prefers-color-scheme: light) {
+    body{
+     background-color: rgb(255, 255, 255);
+    }
+    .text{
+        color: #000;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    body{
+     background-color: rgb(30, 30, 30);
+    }
+    .font{
+        color: white;
+    }
+  }
