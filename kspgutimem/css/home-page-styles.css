@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url(input.css);
+
+.font{
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.font-2{
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    vertical-align:middle;
+    font-size: 10vw;
+    color: #ffffff;
+    position	: relative;
+    padding: 0 10vw;
+    line-height	: 28vw;
+}
+
+
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+html{
+  padding: 0;
+  margin: 0;
+}
+
+.container-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:stretch ;
+}
+.block{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
+
+
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+}
+.one{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+    
+}
+.two{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+.three{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+   
+
+    
+}
+.six{
+
+    background-color: darkorange;
+    height: 100px;
+    width: 100%;
+    align-items: flex-end;
+    
+}
+.text{
+    color:rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+.text-3{
+    color:rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+}
+.output{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.499);
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    align-items: flex-start;
+    vertical-align: top;
+
+
+    
+    
+}
+.settings{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.settings-block{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start
+}
+label{
+    font-weight: bold;
+}
+.sketch{
+    position:absolute;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+.input1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+
+.radio-form{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+.custom-radio{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-weight: 400;
+  }
+.custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 30%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+    border-radius: 40%;
+    transition: border-radius 0.25s ease-in-out;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  /* стили для радиокнопки, находящейся в фокусе */
+  .custom-radio:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-radius: 100%;
+    transition: border-radius 0.25s ease-in-out;
+  }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+    border-radius: 100%;
+    transition: border-radius 0.25s ease-in-out;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: rgb(60, 166, 231);
+    background-color: rgb(60, 166, 231);
+    border-radius: 100%;
+    transition: border-radius 0.25s ease-in-out;
+
+    }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+.button-cst{
+  width: 100%;
+  padding-right: 0;
+  justify-items: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  flex-wrap: wrap;
+  
+  
+}
+.button-ms{
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+  .c-button {
+    min-width: 38px;
+    min-height: 38px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: rgb(55, 159, 224);
+    color: #fff;
+    align-items: stretch;
+    padding: 0px 15px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+
+    }
+  
+  .c-button:hover {
+    background: rgb(51, 145, 203);
+  
+  }
+  
+  .c-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+
+  }
+.text-1{
+    color: white;
+    font-weight: bold;
+
+}
+.text-2{
+    color: white;
+}
+
+
+
+.projects{
+    width: 100vw;
+    height: 30vw;
+    background: #000000;
+    border-radius: 9vw;
+    display: flex; 
+    margin: 10px;
+
+    
+}
+
+
+.icon{
+    height: 20vw;
+    width: 20vw;
+    position:relative;
+    left: calc(50% - 20vw/2);
+    top: calc(50% - 20vw/2);
+
+}
+.icon-vk{
+    height: 20vw;
+    width: 20vw;
+    position:relative;
+    left: calc(50% - 20vw/2);
+    top: calc(50% - 20vw/2);
+
+}
+
+.icon-inst{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    left: calc(50% - 20vw/2);
+    top: calc(50% - 20vw/2);
+}
+.icon-twi{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    left: calc(50% - 20vw/2);
+    top: calc(50% - 20vw/2);
+}
+.icon-yt{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    left: calc(50% - 20vw/2);
+    top: calc(50% - 20vw/2);
+}
+.icon-blshv.anim{
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    left: calc(50% - 40vw/2);
+    top: calc(50% - 40vw/2);
+    
+    
+}
+
+
+
+
+
+.social-block{
+  width:30vw;
+  height:30vw;
+  margin: 10px;
+}
+
+.tg{
+    background-color: #0088cc;
+    border-radius: 30%;
+}
+.tg:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+.vk{
+    background-color: #0077FF;
+    border-radius: 30%;
+    
+}
+.vk:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+.inst{
+    background: radial-gradient(79.06% 56.9% at 30.27% 100%, #FED276 0%, rgba(253, 189, 97, 0.975006) 17.02%, #F6804D 45.41%, rgba(232, 61, 92, 0.0001) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(165.51deg, #4E60D3 5.38%, #913BAF 20.14%, #D52D88 84.1%, #F26D4F 108.76%);;
+    border-radius: 30%;
+}
+.inst:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+.twi{
+    background-color: #1D9BF0;
+    border-radius: 30%;
+}
+.twi:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+.yt{
+    background-color: #FF0000;
+    border-radius: 30%;
+}
+.yt:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+.git{
+    background-color: #ffffff;
+    border-radius: 30%;
+}
+.git:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+.tt{
+    background-color: #000000;
+    border-radius: 30%;
+    
+}
+.tt:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+.blshv{
+    background-color: #ffffff;
+    border-radius: 30%;
+    
+}
+.blshv:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+.ks-pguti{
+    background-color: #63B0DE;
+    border-radius: 30%;
+    
+}
+.ks-pguti:hover{
+    border-radius: 100%;
+    transition: border-radius 0.3s ease-in-out;
+}
+@media (max-width: 599px) {
+    .one {
+      /* На маленьких экранах мы меняем направление основной оси с горизонтального (строка) на вертикальное (колонка) */
+        height: auto;
+        justify-content:center;
+        margin: 0 auto;
+    }
+    .text{
+    }
+    .three{
+        height: auto;
+        justify-content:center;
+        margin: 0 auto;
+    }
+    .settings{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10px;
+    }
+    .settings-block{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10px;
+    }.social-block{
+        height:45vw;
+        width: 45vw;
+    }
+    .icon{
+        height: 30vw;
+        width: 30vw;
+        left: calc(50% - 30vw/2);
+        top: calc(50% - 30vw/2);
+    
+    }
+    
+  }
+  @media (max-width: 399px) {
+    .one {
+      /* На маленьких экранах мы меняем направление основной оси с горизонтального (строка) на вертикальное (колонка) */
+        height: auto;
+        justify-content:center;
+        margin: 0 auto;
+    }
+    .text{
+    }
+    .two{
+        height: auto;
+        justify-content:center;
+        margin: 0 auto;
+    }
+    .settings{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10px;
+    }
+    .settings-block{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10px;
+    }.social-block{
+        height:80vw;
+        width: 80vw;
+    }
+    .icon{
+        height: 55vw;
+        width: 55vw;
+        left: calc(50% - 55vw/2);
+        top: calc(50% - 55vw/2);
+    
+    }
+    
+  }
+
+
+
+
+
+
+  @media (prefers-color-scheme: light) {
+    body{
+     background-color: rgb(255, 255, 255);
+    }
+    .text{
+        color: #000;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    body{
+     background-color: rgb(30, 30, 30);
+    }
+    .font{
+        color: white;
+    }
+  }
